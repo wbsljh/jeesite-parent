@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+  <wb-module deploy-name="jeesite-web">
+        <dependent-module archiveName="jeesite-sys-service-1.2.7.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/jeesite-sys-service/jeesite-sys-service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jeesite-gen-service-1.2.7.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/jeesite-gen-service/jeesite-gen-service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jeesite-cms-service-1.2.7.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/jeesite-cms-service/jeesite-cms-service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jeesite-oa-service-1.2.7.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/jeesite-oa-service/jeesite-oa-service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jeesite-activiti-service-1.2.7.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/jeesite-activiti-service/jeesite-activiti-service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/overlay/prj/jeesite-oa-web?includes=**/**&amp;excludes=META-INF/MANIFEST.MF">
+            <dependency-type>consumes</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/overlay/prj/jeesite-cms-web?includes=**/**&amp;excludes=META-INF/MANIFEST.MF">
+            <dependency-type>consumes</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/overlay/prj/jeesite-gen-web?includes=**/**&amp;excludes=META-INF/MANIFEST.MF">
+            <dependency-type>consumes</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/overlay/prj/jeesite-sys-web?includes=**/**&amp;excludes=META-INF/MANIFEST.MF">
+            <dependency-type>consumes</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/overlay/slf/?includes=**/**&amp;excludes=META-INF/MANIFEST.MF">
+            <dependency-type>consumes</dependency-type>
+        </dependent-module>
+    <property name="context-root" value="jeesite-web"/>
+    <wb-resource deploy-path="/" source-path="src/main/webapp"/>
+    <property name="java-output-path" value="/target/classes"/>
+        <property name="component.exclusion.patterns" value="static/bootstrap/2.3.1/docs/**,static/ckeditor/_samples/**,static/ckeditor/_source/**,static/ckfinder/_samples/**,static/ckfinder/help/**,static/compressor*/**,static/jquery-jbox/2.3/docs/**,static/jquery-jbox/2.3/Skins2/**,static/jquery-validation/1.11.0/demo/**,static/jquery-ztree/3.5.12/demo/**,static/My97DatePicker/docs/**,static/supcan/doc/**,static/SuperSlide/demo/**,static/treeTable/demo/**,test/**,WEB-INF/classes/org/apache/ibatis/**,WEB-INF/classes/org/mybatis/spring/**"/>
+    <wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+  </wb-module>
+</project-modules>

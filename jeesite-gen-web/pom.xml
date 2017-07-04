@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>com.thinkgem.jeesite</groupId>
+		<artifactId>jeesite-parent</artifactId>
+		<version>1.2.7</version>
+	</parent>
+	<artifactId>jeesite-gen-web</artifactId>
+	<packaging>war</packaging>
+	<name>Jeesite Gen Web</name>
+
+	<url>http://thinkgem.github.com/jeesite</url>
+	<inceptionYear>2012-2016</inceptionYear>
+	
+	<!-- 依赖项定义 -->
+	<dependencies>
+	
+		<dependency>
+			<groupId>com.thinkgem.jeesite</groupId>
+			<artifactId>jeesite-gen-service</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		
+	</dependencies>
+	
+	<!-- 开发者信息 -->
+	<developers>  
+		<developer>
+			<id>thinkgem</id>
+			<name>WangZhen</name>
+			<email>thinkgem at 163.com</email>
+			<roles><role>Project lead</role></roles>
+			<timezone>+8</timezone>
+		</developer>
+	</developers>
+	
+</project>
